@@ -1,0 +1,17 @@
+/*///////////////////////////////////*/
+/*/             Base                /*/
+/*///////////////////////////////////*/
+
+@use "../utilities" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondary-color;
+}
+
+header {
+  background-color: $primary-color;
+}

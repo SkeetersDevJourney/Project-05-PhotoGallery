@@ -1,0 +1,81 @@
+/*///////////////////////////////////*/
+/*/            Searchbar            /*/
+/*///////////////////////////////////*/
+
+@use "../utilities" as *; 
+
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  font-size: 1.1em;
+  color: ghostwhite;
+  width: 50%;
+  height: 50%;
+  margin: 20px 25%;
+  background-color: $secondary-color;
+  border-style: none;
+  border-radius: 10px;
+  outline: none;
+  &::placeholder {
+    color: ghostwhite;
+    text-align: center;
+  }
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  font-size: 2em;
+  color: $secondary-color;
+  text-shadow: 3px 4px 5px black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider1, .slider2 {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  margin: 0 15%;
+  z-index: 2;
+} 
+
+.slider1 {
+  background-image: linear-gradient(to top right, $primary-color 50%, transparent 0);
+  z-index: 3;
+}
+
+.slider2 {
+  background-image: linear-gradient(to bottom left, $primary-color 50%, transparent 0);
+}
+
+.overlay {
+  position: absolute;
+  background-color: transparent;
+  max-width: 750px;
+  width: 60%;
+  height: 100%;
+  &:hover > .slider2 {
+    transform: translateX(100%);
+    transition-duration: .8s;
+  }
+  &:hover > .slider1 {
+    transform: translateX(-100%); 
+    transition-duration: .8s;
+  }
+  &:hover > .slider1 > .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    text-shadow: none;
+    transition-duration: .9s;
+  }
+}
+
+

@@ -1,0 +1,16 @@
+/*///////////////////////////////////*/
+/*/             Grid                /*/
+/*///////////////////////////////////*/
+
+main {
+  max-width: 750px;
+  margin: 20px auto;
+}
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  grid-auto-rows: minmax(90px, auto);
+  grid-gap: 10px;
+}

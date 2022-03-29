@@ -345,11 +345,11 @@ template {
 }
 
 body {
-  background-color: #4bb3b3;
+  background-color: #ac96c9;
 }
 
 header {
-  background-color: #3c8f8f;
+  background-color: #8463af;
 }
 
 /*///////////////////////////////////*/
@@ -363,9 +363,10 @@ main {
 .gallery {
   display: grid;
   justify-content: center;
+  margin: 0 10px;
   grid-template-columns: repeat(4, minmax(90px, 1fr));
   grid-auto-rows: minmax(90px, auto);
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 /*///////////////////////////////////*/
@@ -375,6 +376,9 @@ img {
   display: block;
   width: 100%;
   border-radius: 15px;
+}
+img:hover {
+  box-shadow: 0 0 10px 10px #8463af;
 }
 
 /*///////////////////////////////////*/
@@ -394,7 +398,7 @@ header {
   width: 50%;
   height: 50%;
   margin: 20px 25%;
-  background-color: #4bb3b3;
+  background-color: #ac96c9;
   border-style: none;
   border-radius: 10px;
   outline: none;
@@ -407,8 +411,8 @@ header {
 .fa-magnifying-glass {
   position: absolute;
   font-size: 2em;
-  color: #4bb3b3;
-  text-shadow: 3px 4px 5px black;
+  color: #ac96c9;
+  text-shadow: 3px 4px 4px #0e0e0e;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -423,12 +427,12 @@ header {
 }
 
 .slider1 {
-  background-image: linear-gradient(to top right, #3c8f8f 50%, transparent 0);
+  background-image: linear-gradient(to top right, #8463af 50%, transparent 0);
   z-index: 3;
 }
 
 .slider2 {
-  background-image: linear-gradient(to bottom left, #3c8f8f 50%, transparent 0);
+  background-image: linear-gradient(to bottom left, #8463af 50%, transparent 0);
 }
 
 .overlay {

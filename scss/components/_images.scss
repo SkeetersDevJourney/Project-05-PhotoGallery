@@ -2,8 +2,13 @@
 /*/            Images               /*/
 /*///////////////////////////////////*/
 
+@use "../utilities/" as *;
+
 img {
   display: block;
   width: 100%;
   border-radius: 15px;
+  &:hover {
+    box-shadow:  0 0 10px 10px $primary-color;
+  }
 }

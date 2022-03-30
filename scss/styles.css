@@ -364,10 +364,11 @@ main {
 }
 
 .gallery {
+  max-width: 1024px;
   display: grid;
   justify-content: center;
   margin: 0 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, auto));
   grid-gap: 15px;
 }

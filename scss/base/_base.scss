@@ -9,7 +9,10 @@
 }
 
 body {
-  background-color: $secondary-color;
+  height: 100vh;
+  background-image: radial-gradient($secondary-color 80%, $primary-color);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
